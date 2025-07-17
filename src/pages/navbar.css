@@ -1,0 +1,40 @@
+/* --- Main Navbar Container --- */
+.navbar {
+  width: 100%;
+  height: 80px;
+  background-color: #1a1a1a; /* A dark, modern background */
+  display: flex;
+  justify-content: flex-end; /* Aligns links to the right */
+  align-items: center;
+  padding: 0 2rem; /* Adds some space on the left/right */
+  box-sizing: border-box; /* Ensures padding is included in the width */
+  margin-bottom: 30px; /* Pushes the main page content down */
+}
+
+/* --- Styling for all the links inside the navbar --- */
+.navbar a {
+  color: #e0e0e0; /* A soft white for better readability */
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-left: 25px; /* Adds space between the links */
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* --- Hover effect for the links --- */
+.navbar a:hover {
+  background-color: #007bff; /* A bright blue for a standout hover effect */
+  color: #ffffff; /* Change text to pure white on hover */
+}
+
+/* 
+  Optional: If you use NavLink instead of Link, you can add this
+  to style the link of the page you are currently on.
+*/
+/*
+.navbar a.active {
+  background-color: #0056b3;
+  color: #ffffff;
+}*/

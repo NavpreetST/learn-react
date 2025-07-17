@@ -1,0 +1,123 @@
+/* --- Global Styles & Variables --- */
+:root {
+  --primary-color: #007bff; /* A nice, modern blue */
+  --primary-hover-color: #0056b3;
+  --text-color: #343a40;
+  --background-color: #f8f9fa;
+  --navbar-background: #ffffff;
+  --border-color: #dee2e6;
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.App {
+  text-align: center;
+}
+
+/* --- Navbar Styling --- */
+/* This assumes your Navbar component renders a <nav> element */
+.navbar {
+  background-color: var(--navbar-background);
+  padding: 1rem 2rem;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px; /* Space between links */
+  margin-bottom: 2rem;
+}
+
+.navbar a { /* This styles the <Link> components */
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.navbar a:hover {
+  background-color: #e9ecef;
+  color: var(--primary-color);
+}
+
+/* 
+  Note: If you use <NavLink> instead of <Link>, you can style the active link like this:
+  .navbar a.active {
+    background-color: var(--primary-color);
+    color: white;
+  }
+*/
+
+
+/* --- Page Content Styling --- */
+/* This provides consistent padding and max-width for your page components */
+.App > div:not(.navbar) { /* Targets the container for your routed pages */
+  padding: 0 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* --- Common Component Styles (Buttons, Inputs) --- */
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--primary-hover-color);
+}
+
+input {
+  font-size: 1rem;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  margin: 0.5rem;
+  min-width: 250px;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+/* --- Specific Page Styling Example --- */
+/* You can add styles for specific pages if needed */
+.profile-container,
+.change-profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+}
