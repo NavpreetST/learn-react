@@ -10,6 +10,7 @@ import { States } from './pages/stateManagement';
 import { ChangeProfile } from './pages/ChangeProfile';
 import { Profile } from './pages/profile';
 import { useState, createContext } from 'react';
+import { Form } from './Form';
 
 
 export const AppContext = createContext();
@@ -31,6 +32,7 @@ function App() {
           <Route path = "/contact" element = {<Contact />} />
           <Route path = "/states" element = {<States />} />
           <Route path = "/changeProfile" element= {<ChangeProfile />} />
+          <Route path = "/form" element= {<Form />} />
           <Route path = "*" element = { <Error />} />
         </Routes>
       </Router>
