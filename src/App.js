@@ -10,7 +10,7 @@ import { States } from './pages/stateManagement';
 import { ChangeProfile } from './pages/ChangeProfile';
 import { Profile } from './pages/profile';
 import { useState, createContext } from 'react';
-import { Form } from './Form';
+import { Form } from './pages/Form';
 
 
 export const AppContext = createContext();
