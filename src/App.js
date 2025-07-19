@@ -11,6 +11,8 @@ import { ChangeProfile } from './pages/ChangeProfile';
 import { Profile } from './pages/profile';
 import { useState, createContext } from 'react';
 import { Form } from './pages/Form';
+import { CustomHooks } from './pages/customHooks';
+import { Counter } from './pages/counter';
 
 
 export const AppContext = createContext();
@@ -33,6 +35,8 @@ function App() {
           <Route path = "/states" element = {<States />} />
           <Route path = "/changeProfile" element= {<ChangeProfile />} />
           <Route path = "/form" element= {<Form />} />
+          <Route path = "/hooks" element= {<CustomHooks />} />
+          <Route path = "/counter" element= {<Counter />} />
           <Route path = "*" element = { <Error />} />
         </Routes>
       </Router>

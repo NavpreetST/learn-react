@@ -10,6 +10,8 @@ export const Navbar = () => {
             <Link to="/profile"> Profile</Link>
             <Link to="/contact"> Contact</Link>
             <Link to="/form"> Form</Link>
+            <Link to="/hooks"> Hooks</Link>
+            <Link to="/counter"> Counter</Link>
 
         </div>
     );
